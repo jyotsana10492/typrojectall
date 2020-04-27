@@ -27,7 +27,8 @@ public class BaseLib {
 	@BeforeSuite
 	public void config() {
 
-		baseURI = "http://13.126.80.194";
+		baseURI = "http://13.126.80.194:8080/authenticate"; 
+				
 		port = 8080;
 
 			given().auth().basic("rupeek", "password");

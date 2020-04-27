@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.json_server.tests.Autorization"/>
-      <class name="com.json_server.tests.Get_All_Req_Data"/>
-      <class name="com.json_server.parser.JsonUtil"/>
-      <class name="com.json_server.tests.Get_All_Phone"/>
+      <class name="com.json_server.test.Authentication"/>
+      <class name="com.json_server.test.getCustomerRecords"/>
+      <class name="com.json_server.test.getSingleRecord"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

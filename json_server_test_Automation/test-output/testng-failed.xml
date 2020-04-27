@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.json_server.tests.Autorization">
+      <class name="ss.getSingleRecord">
         <methods>
-          <include name="get_All_Data"/>
+          <include name="config"/>
+          <include name="getAutherizationWithInValidphoneNo"/>
         </methods>
-      </class> <!-- com.json_server.tests.Autorization -->
+      </class> <!-- ss.getSingleRecord -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
