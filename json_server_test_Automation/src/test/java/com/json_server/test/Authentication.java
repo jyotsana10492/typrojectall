@@ -31,24 +31,7 @@ import static io.restassured.RestAssured.given;
 		}
 		
 		
-		
-
-
-			
-
-//		@Test
-//			public void getTokenWithvalidinput()
-//			{
-//						
-//			given().contentType(ContentType.JSON).body("{baseURI}").post(BASE_URL_Authenticate).then().assertThat().statusCode(200)
-//					.and().contentType(ContentType.JSON).and().time(lessThan(9000L));
-//					
-//					Response response = (Response) given().contentType(ContentType.JSON).and().body("").post(BASE_URL_Authenticate).then().assertThat().statusCode(401).
-//							and().contentType("").and().time(lessThan(9000L));
-//					//System.out.println(response.getBody().asString());
-//				}
-//			
-			/**
+		/**
 //			 *  related negative Scenarios
 //			 */
 //				
@@ -89,7 +72,24 @@ import static io.restassured.RestAssured.given;
 				{
 					given().contentType(ContentType.JSON).body("{}").post(BASE_URL_Authenticate).then().assertThat().statusCode(401)
 					.and().contentType("").and().time(lessThan(9000L));
+			
+				
 				}
+				
+				
+				
+//				@Test
+//				public void getTokenWithvalidinput()
+//				{
+//							
+//				given().contentType(ContentType.JSON).body("{baseURI}").post(BASE_URL_Authenticate).then().assertThat().statusCode(200)
+//						.and().contentType(ContentType.JSON).and().time(lessThan(9000L));
+//						
+//						Response response = (Response) given().contentType(ContentType.JSON).and().body("").post(BASE_URL_Authenticate).then().assertThat().statusCode(401).
+//								and().contentType("").and().time(lessThan(9000L));
+//						//System.out.println(response.getBody().asString());
+//					}
+//				
 		}
 		
 
