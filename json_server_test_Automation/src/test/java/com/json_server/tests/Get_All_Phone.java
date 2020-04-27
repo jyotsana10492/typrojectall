@@ -20,13 +20,15 @@ import io.restassured.http.ContentType;
 
 public class Get_All_Phone extends BaseLib{
 	
+	
 	@Test
-	public void get_all_contacts_phone() {
-		
-	given().when().get(IEndPoints.GET_RESOURSE_PHONE).then().assertThat().statusCode(401).and().
-	contentType(ContentType.JSON).and().body("message",Matchers.equalTo("Unauthorized")).time(lessThan(1000l));
-		
-	}
+	public void get_all_contacts_phone1() {
+
+		given().when().get(IEndPoints.GET_RESOURSE_PHONE).then().assertThat().statusCode(401).and()
+				.contentType(ContentType.JSON).and()
+				.body("message", Matchers.equalTo("Unauthorized")).and().time(lessThan(1000l));
+}
+
 	
 	
 }

@@ -11,14 +11,13 @@ public interface IEndPoints {
 
 
 
-	String POST_REQUEST	="authenticate";
-	String GET_REQUEST	="api/v1/users";
-	String CREATE_RESOURCE_PHONE="api/v1/users/{phone}";
+	
+	String POST_REQUEST= "authenticate";
+	String GET_RESOURSE= "api/v1/users";
+	String GET_RESOURSE_PHONE="api/v1/users/{phone}";
+
+}
 	
 
 	
-	URI GET_RESOURCE_PHONE = null;
-	URI GET_RESOURCE = null;
-	URI GET_RESOURSE_PHONE = null;}
-
-
+	

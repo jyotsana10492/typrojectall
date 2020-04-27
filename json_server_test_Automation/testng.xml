@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.json_server.tests.Autorization"/>
+      <class name="com.json_server.tests.Get_All_Req_Data"/>
+      <class name="com.json_server.parser.JsonUtil"/>
+      <class name="com.json_server.tests.Get_All_Phone"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

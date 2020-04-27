@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.json_server.tests.GetSingleResource">
+      <class name="com.json_server.tests.Autorization">
         <methods>
-          <include name="config"/>
-          <include name="getSingleresourceWithInValidId"/>
+          <include name="get_All_Data"/>
         </methods>
-      </class> <!-- com.json_server.tests.GetSingleResource -->
+      </class> <!-- com.json_server.tests.Autorization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

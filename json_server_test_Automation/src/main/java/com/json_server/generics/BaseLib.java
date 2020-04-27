@@ -9,35 +9,29 @@ import static io.restassured.RestAssured.*;
 
 import org.testng.annotations.BeforeSuite;
 
+import org.testng.annotations.BeforeSuite;
+import static io.restassured.RestAssured.*;
+
+/**
+ * 
+ * @author jyotsana
+ *
+ */
+
 public class BaseLib {
-//private Object token;
-	
-	
-	
-	/**to intialization the base url .port and authentication  
-	
-	*/
-	
 
-@BeforeSuite	
-public void config()	
-{
-baseURI="http://13.126.80.194:8080";
-port=3000;
+	/**
+	 * to initialize the base URI, port and authentication
+	 */
 
-String password = null;
-String userName = null;
-given().auth().basic("rupeek","password");
-String token = null;
-given().auth().oauth2(token);
+	@BeforeSuite
+	public void config() {
 
+		baseURI = "http://13.126.80.194";
+		port = 8080;
 
+			given().auth().basic("rupeek", "password");
+		// given().auth().oauth2(token);
 
-
-
-}
-	
-	
-	
-
+	}
 }
